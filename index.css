@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: white;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+}
+.logo{
+    color: rgb(9, 9, 9);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(9, 9, 9);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px; 
+    text-transform: uppercase;
+}
+a.active , a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+
+#container{
+    /* display: flex; */
+    margin: auto;
+    width: 80%;
+}
+#container > .child1{
+    height: 200px;
+    width: 100%;
+}
+#container > .child1 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.offer{
+    margin-top: 60px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #E40532;
+    text-align: center;
+    padding-top: 17px;
+}
+#container > .child2{
+    height: 600px;
+    width: 100%;
+}
+#container > .child2 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#slider{
+    display: flex;
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+    background-color: #F2F2F2;
+}
+#slider > div{
+    height: 80%;
+    width: 25%;
+    margin: auto;
+    background-color: white;
+}
+#slider > div > button{
+    background-color: grey;
+    height: 20px;
+    width: 70%;
+}
+
+
