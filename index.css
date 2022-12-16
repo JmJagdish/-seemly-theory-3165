@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-
+    /* font-family: TradeGothicLTW05-Roman,Arial,sans-serif; */
     font-family: Trade Gothic W01 Light,Arial,sans-serif;
     font-size: 15px;
 }
@@ -58,6 +58,21 @@ nav{
     margin: auto;
     align-items: center;
     text-align: center;
+}
+#skin{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#user_signup{
+    font-size: 2rem;
+}
+#user_signup > p{
+    font-size: 15px;
+}
+#user_signup > a{
+    color:#be181a ;
 }
 .logo{
     color: #be181a;
@@ -166,6 +181,102 @@ a.active , a:hover{
     height: 100%;
     width: 100%;
 }
+#gift_div{
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+}
+#gift_div > .gift_div1 > img{
+    height: 200px;
+    width: 100%;
+}
+#gift_div > .gift_div2{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height: 200px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+#gift_div > .gift_div2 > button{
+    margin: auto;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    background-color: #333333;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+}
+#learn_more{
+    height:300px;
+    width: 100%;
+    margin-top: 60px;
+}
+#learn_more > .learn_more_image > img{
+    height: 200px;
+    width: 100%;   
+}
+#learn_more > .learn_more_button{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#learn_more > .learn_more_button > button{  
+    height: 50px;
+    width: 170px;
+    background-color: #333333;
+    border: 0px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    margin: 10px 20px 10px 20px;
+    /* margin: auto; */
+
+}
+#more_good_things > h1{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-top: 60px;
+    font-weight:5;
+}
+#more_good_things_grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 200px;
+    gap: 20px;
+}
+#more_good_things_grid > div{
+   text-align: center;
+}
+#more_good_things_grid > div > img{
+    height: 100%;
+    width: 100%;
+}
+#more_good_things_grid > div > p > a{
+    color: black;
+}
+#about h1{
+    font-size:xx-large;
+    padding-bottom: 15px;
+    font-weight:5;  
+}
+#about{
+    height: 200px;
+    width: 70%;
+    text-align: center;
+    line-height: 30px;
+    font-weight:lighter;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-weight: lighter;
+}
 #contact{
     margin-top: 60px;
     width: 100%;
@@ -222,4 +333,37 @@ footer{
     font-weight:10;
 }
 
+@media all and (min-width:768px) and (max-width:1024px) {
+    #more_good_things_grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px;
+        gap: 20px;
+    }
+    #gift_div > .gift_div2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #gift_div > .gift_div2 > button{
+        margin: auto;
+        width: 250px;
+    }
 
+
+}
+
+@media all and (min-width:320px) and (max-width:767px) {
+    #more_good_things_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px;
+        gap: 20px;
+    }
+    #gift_div > .gift_div2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #gift_div > .gift_div2 > button{
+        width: 170px;
+    }
+}
