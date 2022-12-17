@@ -210,6 +210,25 @@ a.active , a:hover{
     font-size: medium;
     font-weight: 600;
 }
+#shop{
+    margin-top: 60px;
+    height: 300px;
+    width: 100%;
+    border: 2px solid red;
+    text-align: center;
+}
+#shop > div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 190px;
+    gap: 10px;
+    text-align: center;
+
+}
+#shop img{
+    height: 100%;
+    width: 100%;
+}
 #learn_more{
     height:300px;
     width: 100%;
@@ -348,6 +367,20 @@ footer{
         margin: auto;
         width: 250px;
     }
+    #shop > div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }   
+    #shop{
+        margin-top: 30px;
+        height: 200px;
+        width: 100%;
+    }
+    #shop img{
+        height: 100%;
+        width: 100%;
+    }
 
 
 }
@@ -365,5 +398,10 @@ footer{
     }
     #gift_div > .gift_div2 > button{
         width: 170px;
+    }
+    #shop > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
     }
 }
