@@ -87,7 +87,7 @@ form > p >a{
 }
 .btn-field > button{
     flex-basis: 48%;
-    background: #E20887;
+    background: #E20887;;
     color: #fff;
     height: 40px;
     border-radius: 10px;
@@ -95,13 +95,14 @@ form > p >a{
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+
 }
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
 }
 .input-group{
-    height: 260px;   
+    height: 200px;   
 }
 .btn-field button .disable{
     background: #eaeaea;
