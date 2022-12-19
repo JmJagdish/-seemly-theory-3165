@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="popup">
+    <div class="container">
+        <button type="signup" class="btn" onclick="openPopup()">Submit</button>
+
+    </div>
+    <div class="popup" id="popup">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/1024px-Eo_circle_green_checkmark.svg.png" alt="">
         <h2>Thank You!</h2>
         <p>Your details has been successfully submitted. Thanks!</p>
-        <button type="button">OK</button>
+        <button type="button" onclick="closePopup()">OK</button>
     </div>
 </body>
+<script>
+    let popup=document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");     
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");     
+    }
+</script>
 </html>

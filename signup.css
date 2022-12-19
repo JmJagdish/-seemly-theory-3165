@@ -83,10 +83,11 @@ form > p >a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding-top: 20px;
+    /* justify-content: center; */
 }
 .btn-field > button{
-    flex-basis: 48%;
+    flex-basis: 40%;
     background: #E20887;
     color: #fff;
     height: 40px;
@@ -96,7 +97,11 @@ form > p >a{
     cursor: pointer;
     transition: background 1s;
 }
-.btn-field button.disable{
+.btn-field > button > a{
+    text-decoration: none;
+    color: #fff;
+}
+/* .btn-field button.disable{
     background: #eaeaea;
     color: #555;
 }
@@ -106,4 +111,4 @@ form > p >a{
 .btn-field button .disable{
     background: #eaeaea;
     color: #555;
-}
+} */

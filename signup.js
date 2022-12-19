@@ -8,5 +8,5 @@ function signup(){
     localStorage.setItem("email1",email);
     localStorage.setItem("password1",password);
 
-    alert("Invalid Email and Password");
+    // alert("Invalid Email and Password");
 }
